@@ -7,29 +7,35 @@ const swiper = new Swiper('.swiper-hero', {
     pagination: {
       el: '.swiper-pagination',
     },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
 
     autoplay: {
         delay: 3000,
     }
   });
 
-  var swiper2 = new Swiper(".swiper-promo", {
-    direction: 'horizontal',
-    slidesPerView: 4,
-    spaceBetween: 30,
+const swiper2 = new Swiper(".swiper-promo", {
+  direction: 'horizontal',
+  slidesPerView: 4,
+  spaceBetween: 30,
 
-    loop: true,
-  });
+  loop: true,
+});
+
+const swiper3 = new Swiper(".swiper-obba-bbq", {
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.swiper-button-next-bbq',
+    prevEl: '.swiper-button-prev-bbq',
+  },
+
+  pagination: {
+    el: '.swiper-pagination-bbq',
+  },
+
+  
+
+  loop: true,
+});
+
 
 
