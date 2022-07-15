@@ -140,21 +140,24 @@
 }
 
 .swiper-slide-card .promo-img {
-    flex-basis: 75%;
+    flex-basis: 75% !important;
     width: 100%;
+    height: 200px;
 }
 
 .swiper-slide-card .promo-img img {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
-    /* object-fit: cover; */
+    object-fit: cover;
+    object-position: 0% 0%;
 }
 
 .swiper-slide-card .promo-content {
-    /* background: yellow; */
+    align-items: flex-start;
+    width: 100%;
     max-width: 100%;
-    flex-basis: 25%;
-    margin: 15px;
+    flex-basis: 25% !important;
+    padding: 25px;
 }
 
 .swiper-slide-card .promo-content h1 {
@@ -162,9 +165,18 @@
     width: 100%;
 }
 
+.swiper-slide-card .promo-content .section-separator {
+    margin: 0;
+    width: 25%;
+    margin: 5px 0 8px 0;
+    height: 1px;
+    background: #999;
+}
+
 .swiper-slide-card .promo-content p {
     font-size: 12px;
     text-align: left;
+    color: #999;
 }
 /* End Promo Swiper */
 
@@ -236,6 +248,7 @@
 
 .promo-detail-wrapper .promo-detail-content img {
     width: 50%;
+    object-fit: cover;
     margin: 0 auto;
 }
 
@@ -542,15 +555,29 @@
     padding: 5% 0;
     background: url('../../img/obbas.jpg');
     background-size: cover;
-    background-repeat: none;
     background-position: top center;
+}
+
+.timeline-wrapper .timeline-title {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.timeline-wrapper .timeline-title h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.timeline-wrapper .timeline-title h3 {
+    margin-bottom: 10px;
+    font-size: 35px;
 }
 
 .timeline-wrapper .timeline{
     position: relative;
     min-height: 150px;
     width: 80%;
-    margin: 10% auto;
+    margin: 100px auto;
 }
 
 .line{
@@ -588,14 +615,14 @@
     position: relative;
     z-index: 1;
     margin: 50px 0;
-    padding: 1rem;
     align-items: center;
     min-height: 300px;
 }
 
-.timeline-card:nth-child(odd){
+.timeline-card:nth-child(odd) {
     flex-direction: row-reverse;
     transform: translateX(100%);
+    margin: -300px 0;
 }
 
 .bead{
@@ -610,8 +637,29 @@
     transform: translateX(-50%);
 }
 
-.content{
+.timeline-card .content {
     width: calc(50% - 2rem);
+}
+
+.timeline-card .content h1 {
+    font-size: 2rem;
+}
+
+.timeline-card .content h2 {
+    font-size: 1rem;
+}
+
+
+.timeline-card .content .content-img {
+    width: 70%;
+}
+
+.timeline-card .content .content-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 10%;
+    margin: 10px;
 }
 
 .content p {

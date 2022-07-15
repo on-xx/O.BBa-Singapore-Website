@@ -20,10 +20,6 @@ const swiper4 = new Swiper(".swiper-promo", {
   autoHeight: false,
   loop: true,
 
-  autoplay: {
-    delay : 1000,
-  },
-
   // breakpoints: {
   //   1200: {
   //     slidesPerView : 4
