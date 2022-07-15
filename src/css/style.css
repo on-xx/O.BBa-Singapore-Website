@@ -68,6 +68,12 @@
 .hero .hero-img {
     height: 100%;
 }
+
+.swiper-hero {
+    width: 100%;
+    height: 100%;
+}
+
 /* End Hero Section */
 
 
@@ -162,6 +168,92 @@
 }
 /* End Promo Swiper */
 
+/*** Promo-Detail ***/
+#promo-1 #navbar {
+    border-bottom: 1px solid #999;
+}
+
+#promo-1 #navbar.scrolled {
+    border-bottom: none;
+}
+
+#promo-detail-banner {
+    background: #fff;
+    height: 300px;
+}
+
+#promo-detail-banner .promo-detail-banner {
+    max-width: 80%;
+    height: 100%;
+}
+
+.promo-detail-banner .promo-detail-banner-content {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.promo-detail-banner .promo-detail-banner-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.promo-detail-banner .promo-detail-banner-content p span {
+    font-weight: bold;
+}
+
+/* Promo-detail wrapper */
+#promo-detail {
+    background: #f7f7f7;
+}
+
+#promo-detail .promo-detail {
+    max-width: 90%;
+    height: 100%;
+    padding: 100px 150px;
+}
+
+.promo-detail .promo-detail-wrapper {
+    max-width: 100%;
+    height: 100%;
+    background: #fff;
+    padding: 50px;
+}
+
+.promo-detail-wrapper .promo-detail-title {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    padding: 20px 40px;
+    background: #f7f7f7;
+    justify-content: space-between;
+    border: 1px solid #dddd;
+    color: #3c3c3c;
+}
+
+.promo-detail-wrapper .promo-detail-content {
+    width: 100%;
+}
+
+.promo-detail-wrapper .promo-detail-content img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.promo-detail-wrapper .promo-detail-content p {
+    display: block;
+    margin: 50px;
+    width: 100%;
+    padding: 0 10%;
+}
+
+.promo-detail-wrapper .section-separator {
+    background-color: #dddd;
+}
+/* End Promo-detail wrapper */
+
+
+/*** End Promo-Detail ***/
+
 /* Intro Section */
 #intro {
     padding-bottom: 50px;
@@ -179,10 +271,26 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    color: #000;
+}
+
+.intro-title .logo-icon {
+    margin-bottom: 15px;
+}
+
+.intro-title img:last-child {
+    width: 250px;
+    margin: 20px 0;
+}
+
+.intro-title .section-separator {
+    background: #000;
+    width: 103%;
+    margin: 3px 0;
 }
 
 .intro-title h1 {
-    margin: 10px 0;
+    font-size: 18px;
 }
 
 
@@ -388,6 +496,7 @@
     overflow: hidden;
     width: 100%;
     justify-content: center;
+    border-bottom: 1px solid rgb(180, 180, 180);
 }
 
 .js-tabs__header li {
@@ -395,24 +504,20 @@
 }
 
 .js-tabs__title {
-    width: 200px;
+    width: 550px;
+    font-size: 18px;
+    color: #222;
     text-align: center;
     background: #f5f5f5;
-    border: 2px solid #fff;
     cursor: pointer;
     display: block;
-    padding: 10px 15px;
-    margin: 0 100px;
-    transition: 1s ease;
-    transition-property: background, border-bottom-color;
-}
-
-.js-tabs__title:hover {
-    background: red;
+    padding: 10px 100px;
+    border-bottom: 1px solid transparent;
 }
 
 .js-tabs__title-active {
-    border-bottom-color: red;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color);
 }
 
 .js-tabs__content {
@@ -530,8 +635,11 @@
 /**** OBBA Menu ****/
 
 #menu .js-tabs__title {
-    width: 300px;
-    margin: 0 30px;
+    width: 500px;
+}
+
+#menu .js-tabs__title-active {
+    color: var(--primary-color);
 }
 
 #menu .js-tabs__content {
