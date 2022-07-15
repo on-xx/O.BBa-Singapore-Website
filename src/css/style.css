@@ -328,6 +328,7 @@
 .shop-menu-card .card-img img {
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     object-fit: cover;
     transition: 0.5s ease;
     transition-property: opacity;
