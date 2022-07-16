@@ -31,6 +31,10 @@ ul {
     list-style: none;
 }
 
+p a {
+    color: #fff;
+}
+
 a {
     color: #000;
     text-decoration: none;
