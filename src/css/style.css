@@ -3,7 +3,6 @@
     width: 100%;
     height: 75px;
     transition: 0.5s;
-    /* border-bottom: 3px solid rgb(131, 0, 0); */
 }
 
 #navbar .navbar {
@@ -1350,10 +1349,11 @@
         width: 100%;
         object-fit: cover;
     }
-    
+
     .hamburger {
-        position: fixed;
-        left: 15px;
+        position: fixed !important;
+        top: 23px;
+        left: 15px !important;
         display: block;
     }
 
