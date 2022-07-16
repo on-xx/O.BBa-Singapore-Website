@@ -1020,7 +1020,7 @@
 }
 
 #voc .section-divider .container {
-    border-bottom: 3px solid var(--primary-color);
+    /* border-bottom: 3px solid var(--primary-color); */
     width: 50%;
 }
 
