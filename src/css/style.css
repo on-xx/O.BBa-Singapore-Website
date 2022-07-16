@@ -3,6 +3,7 @@
     width: 100%;
     height: 75px;
     transition: 0.5s;
+    position: relative;
 }
 
 #navbar .navbar {
@@ -1353,18 +1354,8 @@
 
     .hamburger {
         display: block;
-        position: fixed;
-        top: 23px !important;
-        left: 15px !important;
-        -webkit-transform: translateZ(0)
-    }
-
-    .hamburger.scrolled {
-        position: fixed !important;
-        top: 23px !important;
-        left: 15px !important;
-        display: block;
-        -webkit-transform: translateZ(0)
+        position: absolute;
+        left: 15px;
     }
 
     .hamburger.active .bar:nth-child(2) {
