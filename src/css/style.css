@@ -74,6 +74,10 @@
     height: 100%;
 }
 
+.swiper-hero-mobile {
+    display: none;
+}
+
 /* End Hero Section */
 
 
@@ -400,6 +404,11 @@
     color: #fff;
 }
 
+.shop-menu .shop-menu-title p {
+    font-size: 25px;
+    letter-spacing: 0.15rem;
+}
+
 .shop-menu .shop-menu-more {
     width: 80%;
     justify-content: space-between;
@@ -492,6 +501,11 @@
     z-index: -1;
 }
 
+.banner-content h1 {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
 
 
 /* Tab Menu */
@@ -534,9 +548,13 @@
 }
 
 .js-tabs__content {
-    max-width: 80%;
+    max-width: 100%;
     height: 100%;
     margin: 0 auto;
+}
+
+.js-tabs__content:last-child {
+    max-width: 100%;
 }
 
 /* Timeline */
@@ -545,7 +563,7 @@
     margin: 0 auto;
 }
 
-.timeline-wrapper .timeline-top{
+.timeline-wrapper .timeline-top {
     text-align: center;
     color: #fff;
     width: 100%;
@@ -857,8 +875,15 @@
 /**** End OBBA LOCATION Page ****/
 
 /*** Franchise Page ***/
+#franchise #banner {
+    background: url(../../img/obba-express-1-blur.jpg);
+    background-size: cover;
+    background-position: 0% 70%;
+}
+
 #franchise-wrapper {
     height: 100%;
+    background: url(../../img/section-bg-2.png);
 }
 
 #franchise-wrapper .franchise-wrapper {
@@ -905,6 +930,7 @@
     width: 100%;
     margin-top: 50px;
     border-radius: 10px;
+    background: #fff;
     box-shadow: 1px 1px 10px rgb(214, 214, 214);
 }
 
@@ -938,9 +964,11 @@
 }
 
 #franchise #voc-form .voc-form {
+    background: #fff;
     width: 100%;
     height: 100%;
-    padding: 50px 0;
+    padding: 50px 80px;
+    border-radius: 10px;
 }
 
 #franchise #voc-form {
@@ -1047,6 +1075,7 @@
     padding: 5px;
     border: 1px solid rgb(234, 234, 234);
     background: rgb(250,250,250);
+    font-size: 15px;
 }
 
 .form-row textarea {
@@ -1056,6 +1085,8 @@
     border: 1px solid rgb(234, 234, 234);
     resize: none;
     background: rgb(250,250,250);
+    padding: 5px;
+    font-size: 15px;
 }
 
 .form-row:last-child {
@@ -1094,8 +1125,12 @@
     margin: 0 30px;
 }
 
+#shop .shop-banner-content {
+    width: fit-content;
+}
 
-.shop-banner-content .shop-main-img {
+
+#shop .shop-banner-content .shop-main-img {
     width: 550px;
     border-radius: 20px;
     overflow: hidden;
@@ -1128,7 +1163,8 @@
 
 .shop-banner-content .shop-main-content p {
     font-size: 23px;
-
+    width: 100%;
+    text-align: left;
 }
 
 .shop-banner-content .shop-main-content p strike {
@@ -1227,8 +1263,8 @@
 
 
 /* Footer */
-#footer {
-    background: #222222;
+#footer { 
+    background: #111;
     color: #fff;
 }
 
@@ -1244,7 +1280,7 @@
 }
 /* End Footer */
 
-#section-test .section-test {
+#section-banner .section-banner {
     max-width: 100%;
     height: 100px;
     background: url('../../img/section-banner.png');
@@ -1254,7 +1290,269 @@
     color:#fff;
 }
 
-.section-test p {
+.section-banner p {
     font-size: 20px;
-    font-weight: 300;
+    letter-spacing: .15rem;
+    margin: 3px 0;
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgb(207,45,37);
+}
+
+@media(max-width:900px) {
+    #hero {
+        width: 100%;
+        height: 500px;
+    }
+
+    .swiper-hero {
+        display: none;
+    }
+
+    .swiper-hero-mobile {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-hero-mobile .swiper-wrapper {
+        width: 100%;
+    }
+
+    .swiper-hero-mobile .swiper-wrapper .swiper-slide {
+        width: 100%;
+    }
+
+    .swiper-hero-mobile .swiper-wrapper .swiper-slide .swiper-slide-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-hero-mobile .swiper-wrapper .swiper-slide img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    
+
+    .hamburger {
+        position: fixed;
+        left: 15px;
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #navbar {
+        transition: none;
+    }
+
+    #navbar .navbar {
+        justify-content: center;
+    }
+
+    #navbar .navbar .logo {
+        display: flex;
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+    #navbar.scrolled {
+        height: 75px;
+    }
+
+    #navbar.scrolled ul li a {
+        padding: 10px 15px;
+    }
+
+    .navbar .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 111;
+    }
+
+    .navbar .nav-menu .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar .nav-menu.active {
+        left: 0;
+    }
+
+    /* Section Banner */
+    #section-banner .section-banner {
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+    }
+
+    .section-banner p {
+        font-size: 13px;
+        width: 90%;
+        text-align: center;
+    }
+    /* End Section Banner */
+
+    /* Promo Swiper */
+    .promo .promo-title {
+        align-items: center;
+    }
+
+    .swiper-wrapper-promo {
+        height: 400px;
+    }
+    /* End Promo Swiper */
+
+    /* Intro Section */
+    #intro .intro {
+        max-width: 90%;
+    }
+
+    .intro-card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .intro-card {
+        width: 100%;
+        height: 250px;
+    }
+
+    .intro-card .intro-card-content h1 {
+        font-size: 20px;
+    }
+
+    .intro-card .intro-card-content p {
+        font-size: 13px;
+    }
+    /* End Intro Section */
+
+    /* Shop Quick Menu */
+    .shop-menu .shop-menu-title {
+        width: 100%;
+        height: 100px;
+        padding: 5%;
+    }
+
+    .shop-menu .shop-menu-title p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .shop-menu .shop-menu-more {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .shop-menu-wrapper {
+        flex-direction: column;
+    }
+
+    .shop-menu-wrapper .shop-menu-card {
+        margin: 10px 0;
+    }
+    /* End Shop Quick Menu */
+
+    /* Main banner */
+    #banner {
+        height: 250px;
+    }
+
+    .banner-content h1 {
+        font-size: 25px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+        text-align: center;
+        width: 90%;
+    }
+    /* End Main banner */
+
+    /* Tabs */
+    .js-tabs__header {
+        flex-direction: column;
+    }
+
+    .js-tabs__title {
+        font-size: 13px;
+    }
+    /* End Tabs */
+
+    /*** OBBA Page ***/
+    .timeline-wrapper .timeline-top {
+        height: 100px;
+    }
+
+    .timeline-wrapper .timeline-title h1 {
+        font-size: 15px;
+    }
+
+    .timeline-wrapper .timeline-title h3 {
+        font-size: 20px;
+    }
+
+    .timeline-wrapper .timeline-title p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .line {
+        left: calc(0% + 1px);
+    }
+
+    .bead {
+        left: 0%;
+    }
+
+    .timeline-card .content {
+        width: 100%;
+    }
+
+    .timeline-card .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-card .content h2 {
+        font-size: .7rem;
+    }
+
+    .timeline-card .content .content-img {
+        width: 85%;
+    }
+
+    .timeline-card:nth-child(odd) {
+        flex-direction: reverse;
+        transform: translateX(0%);
+        margin: 0;
+    }
+    /*** End OBBA Page ***/
 }

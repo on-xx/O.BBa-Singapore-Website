@@ -131,6 +131,21 @@ strike {
     color: #fff;
     height: 100%;
 }
+
+.banner .banner-content {
+    width: 100%;
+}
+
+.banner-content h1 {
+    font-size: 45px;
+    margin: 10px 0;
+}
+
+.banner-content p {
+    font-size: 16px;
+    text-align: center;
+    width: 30%;
+}
 /* End Main Banner */
 
 

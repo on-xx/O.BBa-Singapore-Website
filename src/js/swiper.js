@@ -11,31 +11,44 @@ const swiper = new Swiper('.swiper-hero', {
   autoplay: {
       delay: 3000,
   }
-  });
+});
+
+const swiper5 = new Swiper(".swiper-hero-mobile", {
+  direction: 'horizontal',
+  loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination-mobile',
+  },
+
+  autoplay: {
+    delay: 3000,
+}
+});
+
 
 const swiper4 = new Swiper(".swiper-promo", {
   direction: 'horizontal',
-  slidesPerView: 4,
+  // slidesPerView: 4,
   spaceBetween: 30,
   autoHeight: false,
   loop: true,
 
-  // breakpoints: {
-  //   1200: {
-  //     slidesPerView : 4
-  //   },
-  //   750: {
-  //     slidesPerView : 1,
-  //     width: 300,
-  //   },
-  //   550: {
-  //     slidesPerView : 1
-  //   },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
 
-  //   300: {
-  //     slidesPerView : 1
-  //   },
-  // }
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    }
+  }
 });
 
 const swiper3 = new Swiper(".swiper-obba-bbq", {

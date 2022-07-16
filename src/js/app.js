@@ -66,3 +66,6 @@ window.addEventListener('scroll', scrollHandler)
 
 // // Draging Disable
 // document.oncontextmenu = function(){return false;}
+
+
+
