@@ -44,6 +44,7 @@
     box-shadow: 1px 1px 5px rgb(182, 182, 182);
     z-index: 2222;
     border-bottom: none;
+    -webkit-transform: translateZ(0)
 }
 
 #navbar.scrolled ul li a {
@@ -1355,6 +1356,7 @@
         position: fixed;
         top: 23px !important;
         left: 15px !important;
+        -webkit-transform: translateZ(0)
     }
 
     .hamburger.scrolled {
@@ -1362,6 +1364,7 @@
         top: 23px !important;
         left: 15px !important;
         display: block;
+        -webkit-transform: translateZ(0)
     }
 
     .hamburger.active .bar:nth-child(2) {
