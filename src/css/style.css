@@ -1351,8 +1351,15 @@
     }
 
     .hamburger {
+        display: block;
+        position: fixed;
+        top: 23px !important;
+        left: 15px !important;
+    }
+
+    .hamburger.scrolled {
         position: fixed !important;
-        top: 23px;
+        top: 23px !important;
         left: 15px !important;
         display: block;
     }

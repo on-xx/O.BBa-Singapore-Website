@@ -1,8 +1,8 @@
 window.addEventListener("scroll", () => {
     let navbar = document.querySelector('nav');
-
+    let hamburger = document.querySelector('.hamburger');
     navbar.classList.toggle("scrolled", window.scrollY > 10);
-
+    hamburger.classList.toggle("scrolled", window.scrollY > 10); 
     
     
 }) 
