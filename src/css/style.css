@@ -1274,7 +1274,6 @@
 
 #footer h1 a {
     color: #fff;
-    margin-bottom: 20px;
 }
 
 #footer .footer {
@@ -1356,6 +1355,7 @@
 
     .hamburger {
         position: fixed;
+        top: 15px;
         left: 15px;
         display: block;
     }
