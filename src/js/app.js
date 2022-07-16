@@ -1,6 +1,10 @@
 window.addEventListener("scroll", () => {
     let navbar = document.querySelector('nav');
-    navbar.classList.toggle("scrolled", window.scrollY > 10);
+    if(window.innerWidth > 900){
+        navbar.classList.toggle("scrolled", window.scrollY > 10);
+    }
+    
+    
 }) 
 
 // Tab Menu

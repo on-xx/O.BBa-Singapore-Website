@@ -1355,7 +1355,6 @@
 
     .hamburger {
         position: fixed;
-        top: 15px;
         left: 15px;
         display: block;
     }
@@ -1395,7 +1394,7 @@
     .navbar .nav-menu {
         position: fixed;
         left: -100%;
-        top: 60px;
+        top: 75px;
         gap: 0;
         flex-direction: column;
         background: #fff;
