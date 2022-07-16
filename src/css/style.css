@@ -669,12 +669,12 @@
 
 
 .timeline-card .content .content-img {
-    width: 70%;
+    width: 80%;
 }
 
 .timeline-card .content .content-img img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     object-position: 0% 10%;
     margin: 10px;
@@ -1268,8 +1268,13 @@
     color: #fff;
 }
 
+#footer .logo-icon {
+    margin-bottom: 10px;
+}
+
 #footer h1 a {
     color: #fff;
+    margin-bottom: 20px;
 }
 
 #footer .footer {
@@ -1508,6 +1513,10 @@
     /* End Tabs */
 
     /*** OBBA Page ***/
+    .timeline-wrapper .timeline {
+        margin: 50px auto 100px auto;
+    }
+
     .timeline-wrapper .timeline-top {
         height: 100px;
     }
@@ -1517,7 +1526,7 @@
     }
 
     .timeline-wrapper .timeline-title h3 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .timeline-wrapper .timeline-title p {
@@ -1546,7 +1555,11 @@
     }
 
     .timeline-card .content .content-img {
-        width: 85%;
+        width: 90%;
+    }
+
+    .timeline-card .content .content-img img {
+        height: 180px;
     }
 
     .timeline-card:nth-child(odd) {
@@ -1554,5 +1567,262 @@
         transform: translateX(0%);
         margin: 0;
     }
+
+    .timeline-card-mobile {
+        display: none;
+    }
     /*** End OBBA Page ***/
+
+    /* OBBA Menu */
+    #menu .js-tabs__content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #menu .swiper-pagination-bullet {
+        display: none;
+    }
+    /* End OBBA Menu */
+
+    /* Location */
+    .obba-location-card-wrapper {
+        width: 100%;
+    }
+
+    .obba-location-card-wrapper .location-card {
+        flex-direction: column;
+    }
+
+    .location-card .location-card-content h1 {
+        font-size: 22px;
+    }
+    /* End Location */
+    
+    /* Franchise */
+    #franchise-wrapper .franchise-wrapper {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .franchise-wrapper .franchise-title {
+        align-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .franchise-wrapper .franchise-title h1 {
+        width: 100%;
+    }
+
+    .franchise-wrapper .franchise-title p {
+        width: 100%;
+    }
+
+    .franchise-wrapper .franchise-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .franchise-wrapper .franchise-img-wrapper {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .franchise-wrapper .franchise-img-wrapper img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .franchise-process .franchise-process-row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .franchise-process .franchise-process-row .arrow-icon {
+        display: none;
+    }
+
+    .franchise-process .franchise-process-row img {
+        width: 200px;
+    }
+
+    .franchise-process .franchise-process-row p {
+        font-size: 20px;
+    }
+
+    .franchise-process-row .franchise-process-column {
+        margin: 30px 0;
+        width: 100%;
+    }
+
+    #franchise #voc-form .voc-form {
+        padding: 10px;
+        max-width: 100%;
+
+    }
+
+    #franchise #voc-form h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    #franchise #voc-form p {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+    /* End Franchise */
+
+    /* VOC */
+    #voc-form .voc-form {
+        width: 100%;
+    }
+
+    #voc-form .voc-form p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-wrapper .form-row {
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .form-row label {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .form-row input {
+        width: 100%;
+    }
+
+    .form-row textarea {
+        width: 100%;
+        min-height: 200px;
+    }
+    /* End VOC */
+
+    /* Shop Page */
+    #shop #banner {
+        padding: 20px 0
+    }
+
+    #shop .shop-banner-content {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #shop .shop-banner-content .shop-main-img {
+        width: 100%;
+    }
+
+    .shop-banner-content .shop-main-content {
+        align-content: center;
+        margin-top: 20px;
+    }
+
+    .shop-banner-content .shop-main-content h1 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .shop-banner-content .shop-main-content p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .shop-banner-content .shop-main-content .btn {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .shop-product .shop-product-heading {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .shop-product .shop-product-heading h1 {
+        margin-top: 15px;
+        margin-left: 0;
+    }
+
+    .shop-product .shop-menu-wrapper:last-child .shop-menu-card:nth-child(4),
+    .shop-product .shop-menu-wrapper:last-child .shop-menu-card:nth-child(5) {
+    display: none;
+    }
+
+    #shop-product .shop-product {
+        margin-bottom: 50px;
+    }
+
+    .purchase .purchase-detail-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .purchase-detail-wrapper .purchase-detail-content .small-logo {
+        width: 50px;
+        margin-top: 20px;
+    }
+
+    .purchase-detail-wrapper .purchase-detail-content {
+        align-items: center;
+        width: 100%;
+    }
+
+    .purchase-detail-wrapper .purchase-detail-content h1 {
+        text-align: center;
+    }
+
+    .purchase .shop-product-heading {
+        margin: 50px 0 20px 0;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .purchase-detail-wrapper .purchase-detail-content .btn {
+        width: 100%;
+    }
+    /* End Shop Page */
+
+    /* Promo Detail */
+    #promo-detail-banner {
+        height: 100%;
+        padding: 30px 0;
+    }
+
+    #promo-detail-banner .promo-detail-banner-content {
+        align-items: center;
+    }
+
+    #promo-detail-banner .promo-detail-banner-content h1 {
+        width: 100%;
+        font-size: 35px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    #promo-detail .promo-detail {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .promo-detail .promo-detail-wrapper {
+        padding: 0 10px;
+    }
+
+    .promo-detail-wrapper .promo-detail-title {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promo-detail-wrapper .promo-detail-title h1 {
+        font-size: 23px;
+        margin-bottom: 5px;
+    }
+    /* End Promo Detail */
 }
