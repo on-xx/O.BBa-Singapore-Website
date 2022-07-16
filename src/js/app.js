@@ -1,8 +1,8 @@
 window.addEventListener("scroll", () => {
     let navbar = document.querySelector('nav');
-    if(window.innerWidth > 900){
-        navbar.classList.toggle("scrolled", window.scrollY > 10);
-    }
+
+    navbar.classList.toggle("scrolled", window.scrollY > 10);
+
     
     
 }) 
