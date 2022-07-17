@@ -1734,7 +1734,7 @@
 
     /* VOC */
     #voc-form .voc-form {
-        width: 100%;
+        max-width: 90%;
     }
 
     #voc-form .voc-form p {
