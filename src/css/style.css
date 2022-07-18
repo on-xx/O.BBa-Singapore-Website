@@ -759,10 +759,10 @@
 }
 
 #menu .js-tabs__content {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 50px;
-    background: #fff;
+    background: url('../../img/section-bg-2.png');
 }
 
 #menu #banner {
