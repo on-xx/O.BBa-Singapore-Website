@@ -762,6 +762,7 @@
     width: 80%;
     margin: 0 auto;
     padding: 50px;
+    background: #fff;
 }
 
 #menu #banner {
@@ -842,10 +843,14 @@
 .location-card .location-card-content h1 {
     font-size: 25px;
     margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
 }
 
 .location-card .location-card-content h5 {
     font-size: 15px;
+    width: 100%;
+    text-align: center;
 }
 
 .location-card-content .operating-hour {
@@ -1152,6 +1157,7 @@
     padding: 10px;
     font-size: 20px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 
@@ -1366,6 +1372,25 @@
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: rgb(207,45,37);
+}
+
+#thankyou {
+    background: url('../../img/section-bg-2.png');
+}
+
+#thankyou .thankyou {
+    max-width: 100%;
+    justify-content: flex-start;
+    padding: 3%;
+}
+
+.thankyou .thankyou-wrapper {
+    background: #fff;
+    width: 100%;
+    margin-top: 20px;
+    padding: 50px 30px;
+    box-shadow: 1px 1px 10px #999;
+    border-radius: 10px;
 }
 
 @media(max-width:900px) {
@@ -1621,6 +1646,10 @@
     }
 
     /* OBBA CEO */
+    .obba-ceo-wrapper {
+        max-width: 100%;
+    }
+
     .obba-ceo-wrapper .ceo-img {
         width: 100%;
     }
@@ -1633,9 +1662,10 @@
     /*** End OBBA Page ***/
 
     /* OBBA Menu */
+
     #menu .js-tabs__content {
         width: 100%;
-        padding: 10px;
+        padding: 0px;
     }
 
     #menu .swiper-pagination-bullet {
